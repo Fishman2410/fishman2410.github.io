@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8">
+        <title>Blog</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="scripts/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="scripts/script.js"></script>
+    </head>
+    <body> 
+        <div class="header">
+            <div class="topnav">
+              <a href="#home">Home</a>
+              <a href="#about">About</a>
+              <a href="#contact">Contact</a>
+              <input type="text" placeholder="Search..">
+            </div>
+
+        </div>
+        
+        <button onclick="document.getElementById('id01').style.display='block'">
+            Login
+        </button>
+        <button onclick="">
+            Register
+        </button>
+        
+        <div id="id01" class="modal">
+          <span onclick="document.getElementById('id01').style.display='none'" 
+        class="close" title="Close Modal">&times;</span>
+
+          <form class="modal-content animate" action="/action_page.php">
+
+            <div class="container">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+
+              <button type="submit">Login</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+              <span class="psw"><a href="#">Forgot password?</a></span>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1;"></div>
+          </form>
+        </div>
+
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        <div class="cont">
+
+            <div class="row">
+                <div class="leftcolumn">
+                    
+                    <div class="card">
+                            <h2>TITLE HEADING</h2>
+
+                            <h5>Title description, Dec 7, 2017</h5>
+
+                            <div class="fakeimg" style="height:200px;">Image</div>
+                            
+                        <p>Some text..</p>
+
+                    </div>
+                    <div class="card">
+                        <h2>TITLE HEADING</h2>
+                        <h5>Title description, Sep 2, 2017</h5>
+                        <div class="fakeimg" style=""><img src="materials/writing.jpg" style="width: 100%;" /></div>
+                        <p>Some text..</p>
+                    </div>
+                    <div class="card">
+                        <h2>TITLE HEADING</h2>
+                        <h5>Title description, Sep 2, 2017</h5>
+                        <div class="fakeimg" style="height:200px;">Image</div>
+                        <p>Some text..</p>
+                    </div>
+                    
+                </div>
+                <div class="rightcolumn">
+                    <div class="card">
+                        <h2>About Blog</h2>
+                        <div class="fakeimg" style="">Image</div>
+                        <p>Some text about blog</p>
+                    </div>
+                    <div class="card">
+                        <h3>Popular Post</h3>
+                        <div class="fakeimg">Image</div><br>
+                        <div class="fakeimg">Image</div><br>
+                        <div class="fakeimg">Image</div>
+                    </div>
+                    <div class="card">
+                        <h3>Follow Me</h3>
+                        <p>Some text..</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        
+    </body>
+</html>
